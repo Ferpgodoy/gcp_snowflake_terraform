@@ -1,4 +1,4 @@
-# copy this file to env/ and test
+# copy this file to env/, adjust values and test and test
 
 environment = "" # environment name (dev, prod)
 
