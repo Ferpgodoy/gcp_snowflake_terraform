@@ -46,7 +46,7 @@ jobs:
         env:
           TF_VAR_environment: ${{ vars.ENVIRONMENT }}
           TF_VAR_unique_id: ${{ vars.UNIQUE_ID }}
-          TF_VAR_gcp_project_id: ${{ secrets.GCP_PROJECT_ID }}
+          TF_VAR_gcp_project_id: ${{ vars.GCP_PROJECT_ID }}
           TF_VAR_snowflake_org_name: ${{ vars.SNOWFLAKE_ORG_NAME }}
           TF_VAR_snowflake_account_name: ${{ vars.SNOWFLAKE_ACCOUNT_NAME }}
           TF_VAR_snowflake_private_key: ${{ secrets.SNOWFLAKE_PRIVATE_KEY }}
