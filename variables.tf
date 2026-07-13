@@ -29,5 +29,5 @@ variable "snowflake_private_key" {
 }
 
 variable "snowflake_private_key_path" {
-  type    = string
+  type = string
 }

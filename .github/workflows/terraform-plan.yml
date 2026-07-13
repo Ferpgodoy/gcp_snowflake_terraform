@@ -30,14 +30,6 @@ jobs:
         with:
           terraform_version: 1.12.0
 
-      - name: Print backend variables
-        env:
-          TF_STATE_BUCKET: ${{ vars.TF_STATE_BUCKET }}
-          ENVIRONMENT: ${{ vars.ENVIRONMENT }}
-        run: |
-          echo "TF_STATE_BUCKET=$TF_STATE_BUCKET"
-          echo "ENVIRONMENT=$ENVIRONMENT"
-
       - name: Terraform Init
         run: |
           terraform init \
