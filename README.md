@@ -171,3 +171,4 @@ provider "snowflake" {
     authenticator     = "SNOWFLAKE_JWT"
     private_key       = file(private_key_path)
 }
+
