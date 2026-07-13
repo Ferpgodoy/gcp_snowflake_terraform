@@ -1,5 +1,5 @@
 resource "google_storage_bucket" "test_bucket" {
-  
+
   name = "${var.environment}-my-test-bucket-${var.unique_id}"
 
   location = "US"
@@ -9,7 +9,7 @@ resource "google_storage_bucket" "test_bucket" {
 
 resource "snowflake_database" "test_database" {
 
-  name = "test_database"
+  name         = "test_database"
   is_transient = false
 
 }
