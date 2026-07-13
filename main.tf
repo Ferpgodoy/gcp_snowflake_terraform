@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "test_bucket" {
 
-  name = "${var.environment}-my-test-bucket-${var.unique_id}"
+  name = "${lower(var.environment)}-my-test-bucket-${var.unique_id}"
 
   location = "US"
 
