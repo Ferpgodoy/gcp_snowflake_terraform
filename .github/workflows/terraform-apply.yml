@@ -13,6 +13,8 @@ jobs:
   terraform-apply:
     name: Terraform Apply
     runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.ref_name == 'main' && 'PRD' || 'DEV' }}
 
     steps:
       - name: Checkout repository
